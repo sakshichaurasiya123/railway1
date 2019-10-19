@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<title>Cancellation Form</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+         <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+         <link rel="stylesheet" type="text/css" href="../css/imagehover.min.css">
+         <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+<style>
+			
+			.form{
+                           body{background-image:url(image/a1.jpg); background-size:cover;}
+   
+                                margin-left:320px;
+				width:540px;
+				
+				align:center;
+                                background-color: whitesmoke;
+                                margin-top:100px;
+				margin-left:300px;
+				padding: 28px;
+				border-redious:5px;
+				height:250px;
+                                border-radius: 10px;
+                        border: 2px solid #609;
+                        padding: 20px; 
+			}
+			h4 center input[type="number"]{
+			width:250px;
+			height:40px;
+			//border-radius:5px;
+			//padding-left:10px;
+			
+                        border-radius: 15px;
+                        border: 2px solid #609;
+                       // padding: 20px; 
+                        
+			}
+		
+			h4 center input[type="submit"]{
+			
+			//border-redious:10px;
+			background-color:green;
+			color:white;
+			text-transform:capatalize;
+			//font-size:30px;
+                        border-radius: 15px;
+                        border: 2px solid #609;
+                        //padding: 10px; 
+                        width: 250px;
+                        height: 50px;  
+                        margin-left: 90px;
+			}
+			div center h2{color:white;
+                                  font-size: 30px;
+                                  font-style: bold;
+                                  font-family: Courier;
+                                  background-color: green;
+                                background-size: 60px;
+                        }
+                     h2 span{color:white;
+                     }
+                     a{color:black;}
+                     .text-danger{color:red;}
+                     
+                     #header{
+        background:green;
+        width:100%;
+     }
+     hr{color:black;}
+     </style>
+	</head>
+	<body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+     <div id="header">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          
+        <h2><span>Train Cancellation</span></h2>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right"> 
+             <li><a href="ACheckTrain.html">Back</a></li>
+             
+        </ul>
+      </div>
+    </div>
+   </div>
+  </nav>
+
+<form action="../ACancelTrainServlet" class="form" >
+    <div><center><h2>Ticket Cancellation </h2></center></div>
+    <hr style="color:black">
+    
+    <h4><center>Train No: <sup class="text-danger">*</sup> <input type="number" name="trainno" placeholder="Enter Train number...." required></center></h4>
+    <h4><center><input type="submit" value="cancel"></h4></center>
+</form>
+  </body> 
+</html>

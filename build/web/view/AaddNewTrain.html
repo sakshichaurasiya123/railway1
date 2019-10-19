@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<title>Railway Admin Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+ <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+ <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+
+<style>
+
+
+.form{
+    body{background-image:url(image/u.jpg); background-size:cover;}
+   
+                           
+                                margin-left:320px;
+				width:540px;
+				
+				align:center;
+                                background-color: whitesmoke;
+                                margin-top:120px;
+				margin-left:300px;
+				padding: 28px;
+				border-redious:5px;
+				height:720px;
+                                border-radius: 10px;
+                        border: 2px solid #609;
+                        padding: 20px; 
+			}
+			center input[type="text"]{
+			width:300px;
+			height:40px;
+			//border-radius:5px;
+			//padding-left:10px;
+			
+                        border-radius: 15px;
+                        //border: 2px solid #609;
+                        //padding: 20px; 
+                        
+			}
+		
+			center input[type="number"]{
+			width:300px;
+			height:40px;
+			border-radius:15px;
+			
+                        //border: 2px solid #609;
+                        ///padding: 20px; 
+                       
+                        
+			}
+                        
+                        center input[type="date"]{
+			width:300px;
+			height:40px;
+			border-radius:15px;
+			
+                        //border: 2px solid #609;
+                        ///padding: 20px; 
+                       
+                        
+			}
+                        center input[type="time"]{
+			width:300px;
+			height:40px;
+			border-radius:15px;
+			
+                        //border: 2px solid #609;
+                        ///padding: 20px; 
+                       
+                        
+			}
+			
+			
+			h4 center input[type="submit"]{
+			
+			//border-redious:10px;
+			background-color:green;
+			color:white;
+			text-transform:capatalize;
+			//font-size:30px;
+                        border-radius: 15px;
+                        //border: 2px solid #609;
+                        //padding: 10px; 
+                        width: 300px;
+                        height: 50px;  
+                        margin-left: 90px;
+			}
+			div center h2{color:white;
+                                  font-size: 30px;
+                                  font-style: bold;
+                                  font-family: Courier;
+                                  background-color: green;
+                                background-size: 60px;
+                        }
+                     h2 span{color:white;
+                     }
+                     a{color:black;}
+                     .text-danger{color:red;}
+                     
+                     #header{
+        background:green;
+        width:100%;
+     }
+     hr{color:black;}
+     
+		
+</style>
+</head>
+
+<body>
+
+<!-- Links (sit on top) -->
+<nav class="navbar navbar-default navbar-fixed-top">
+     <div id="header">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span  class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>       
+        </button>
+           <img src="../image/logo.jpg" height="100px" width="110px" margin-right="500px">   
+        
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+             <li><a href="ACheckTrain.html">Back</a></li>
+          
+        </ul>
+      </div>
+    </div>
+   </div>
+  </nav>
+<form action="../AaddNewTrain"  method="get" class=form>
+	<div><center><h2> ADD NEW TRAIN HERE </h2></center></div>
+        <hr>
+		
+	<center>Train No : <sup class="text-danger">*</sup>&nbsp;&nbsp;<input type="number" name="trainno" placeholder="Enter Train No........" id="a1" width="400" required><br><br></center>
+        <center>&nbsp;&nbsp;Train Name : <sup class="text-danger">*</sup> &nbsp; &nbsp;&nbsp;<input type="text" name="trainname" placeholder="Enter Train Name........" id="b1" width="150" required><br><br></center>
+	<center>&nbsp;&nbsp;Source : <sup class="text-danger">*</sup> &nbsp; &nbsp;&nbsp;<input type="text" name="source" placeholder="Enter Source Location........" id="b1" width="150" required><br><br></center>
+	<center>&nbsp;&nbsp;Destination : <sup class="text-danger">*</sup> &nbsp; &nbsp;&nbsp;<input type="text" name="destination" placeholder="Enter Destination Location........" id="b1" width="150" required><br><br></center>
+        <center>&nbsp;&nbsp;Arrival Time : <sup class="text-danger">*</sup> &nbsp; &nbsp;&nbsp;<input type="text" name="arrivaltime"  id="b1" placeholder="--:--" required><br><br></center>
+	<center>&nbsp;&nbsp;Departure Time : <sup class="text-danger">*</sup> &nbsp; &nbsp;&nbsp;<input type="text" name="departuretime"  id="b1" placeholder="--:--" required><br><br></center>
+        <center>&nbsp;&nbsp;Running Date : <sup class="text-danger">*</sup> &nbsp; &nbsp;&nbsp;<input type="date" name="journeydate"  id="b1" width="150" required><br><br></center>
+	
+	
+			
+	<h4><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <center><input type="checkbox" name="checkbox" value="Please Remember Me !!!" required>
+        <span>Please Remember Me</span>
+        </center><br>
+        <input type="submit" value="Confirm"></center></h4>
+        <hr>
+       
+</form>
+
+
+</body>
+</html>
+

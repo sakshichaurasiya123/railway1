@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <title>Train Searching</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+         <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+         <link rel="stylesheet" type="text/css" href="../css/imagehover.min.css">
+         <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+        <style>
+            .form{
+                                margin-left:320px;
+				width:600px;
+				 background-color: whitesmoke;
+				align:center;
+                                
+                                margin-top:150px;
+				margin-left:300px;
+				padding: 28px;
+				border-redious:5px;
+				height:500px;
+                                border-radius: 25px;
+                                border: 2px solid #609;
+                                padding: 20px; 
+			}
+			
+		
+			center input[type="text"]{
+			width:300px;
+			height:30px;
+			border-radius:10px;
+			
+                        border: 2px solid #609;
+                        //padding: 20px; 
+                       
+                        
+                        }
+                        center input[type="number"]{
+			width:300px;
+			height:30px;
+			border-radius:15px;
+			
+                        border: 2px solid #609;
+                       // padding: 20px; 
+                       margin-left:130px;
+                        
+			}
+			h4  input[type="submit"]{
+			
+			//border-redious:10px;
+			background-color:green;
+			color:white;
+			text-transform:capatalize;
+			//font-size:30px;
+                        border-radius: 15px;
+                        border: 2px solid #609;
+                        padding: 10px; 
+                        width: 200px;
+                        height: 50px;  
+                       margin-left: 180px;
+			}
+                        
+			div center h2{color:white;
+                                  font-size: 30px;
+                                  font-style: bold;
+                                  font-family: Courier;
+                                  background-color: green;
+                                background-size: 60px;
+                        }
+                     h2 span{color:white;
+                             margin-right:500px;
+                     }
+                      a{color:black;}
+                     .text-danger{color:red;}
+                     
+                     #header{
+                       background:green;
+                        width:100%
+                        }
+                        h4 center{
+                            margin-left:00px;
+                        }
+                        span{color:black;
+                        style:bold;}
+                        h3 center{margin-left: 10px;}
+     
+		
+</style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+     <div id="header">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>       
+        </button>
+           <img src="../image/logo.jpg" height="100px" width="110px" margin-right="500px">   
+        
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="train.html">Back</a></li>
+        </ul>
+      </div>
+    </div>
+   </div>
+  </nav>
+        
+        <form action="../reserveservlet"  method="post" class=form>
+	<div><center><h2> Railway Reservation </h2></center></div>
+        <hr>
+         <h4><center>Passenger Name :<sup class="text-danger">*</sup> &nbsp; &nbsp;<input type="text" name="name" placeholder="Enter Your Name..." required></center></h4>
+       <h4><center>Age :<sup class="text-danger">*</sup> <input type="number" name="age" placeholder="Enter Your Age..." required></center></h4>
+           
+            <h4><center>Sex:<sup class="text-danger">*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="female" required>Female&nbsp; &nbsp;
+                    <input type="radio" name="gender" value="Male">Male</center></h4>
+
+        <h4><center>Booking Date : <sup class="text-danger">*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" placeholder="Enter Journey Date...." name="bookingDate" required> </center></h4>    
+        <h4><center>Travelling Class  : <sup class="text-danger">*</sup>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="travellingClass" style="width:150px"required>  
+            <option>SL</option>  
+            <option>3A</option>  
+            <option>2A</option>  
+            <option>1A</option>  
+            <option>CC</option>
+            <option>EC</option>
+            <option>2S</option>
+            <option>3E</option>
+            <option>FC</option>
+            <option>GN</option>
+            </select>		
+	</center>
+        <h4><center>PNR No. : <sup class="text-danger">*</sup><input type="number" name="pnr" placeholder="Enter PNR no...." required></center></h4>
+       <br> <center><input type="checkbox" name="checkbox" value="Please Remember Me !!!" required>
+        <span>Please Remember Me</span>
+        </center><br>
+       
+        <h4><input type="submit" value="Reserve">
+       </h4>
+        
+</form>
+    </body>
+</html>

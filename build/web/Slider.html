@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="Slider/themes/default/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="Slider/themes/light/light.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="Slider/themes/dark/dark.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="Slider/themes/bar/bar.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="Slider\nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="Slider\demo\style.css" type="text/css" media="screen" />
+
+
+    </head>
+    <body>
+       
+<div id="wrapper">
+<div class="slider-wrapper theme-default">
+<div id="slider" class="nivoSlider"> 
+
+<img src="Slider/demo/images/01.jpg" data-thumb="Slider/themes/default/arrows.png" alt="" />
+<a href="http://dev7studios.com">
+<img src="Slider/themes/default/arrows.png" data-thumb="Slider/demo/images/up.jpg" alt="" title="This is an example of a caption" />
+</a>
+<img src="Slider/demo/images/walle.jpg" data-thumb="Slider/demo/images/walle.jpg" alt="" data-transition="slideInLeft" />
+<img src="Slider/demo/images/nemo.jpg" data-thumb="Slider/demo/images/nemo.jpg" alt="" title="#htmlcaption" />
+</div>
+<div id="htmlcaption" class="nivo-html-caption"> <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. </div>
+</div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script type="text/javascript" src="Slider\jquery.nivo.slider.js"></script> 
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script> 
+
+    </body>
+</html>

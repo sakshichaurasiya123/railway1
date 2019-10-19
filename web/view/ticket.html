@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+ <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+            .form{
+                            
+                                margin-left:320px;
+                                width:500px;
+                                margin-top:15px;
+				margin-left:70px;
+				padding: 28px;
+				 background-color: whitesmoke;
+				height:470px;
+                                border-radius: 15px;
+                        border: 2px solid #609;
+                        padding: 20px; 
+			}
+			center input[type="number"]{
+			width:300px;
+			height:10px;
+			//border-radius:5px;
+			//padding-left:10px;
+			
+                        border-radius: 15px;
+                        border: 2px solid #609;
+                        padding: 20px; 
+                        
+			}
+		
+			center input[type="text"]{
+			width:300px;
+			height:5px;
+			border-radius:15px;
+			
+                        border: 2px solid #609;
+                        padding: 20px; 
+                       
+                        
+			}
+			h4 center input[type="submit"]{
+			
+			//border-redious:10px;
+			background-color:green;
+			color:white;
+			text-transform:capatalize;
+			//font-size:30px;
+                        border-radius: 15px;
+                        border: 2px solid #609;
+                        padding: 10px; 
+                        width: 300px;
+                        height: 50px;  
+                        margin-left: 17px;
+			}
+			div center h2{color:white;
+                                  font-size: 30px;
+                                  font-style: bold;
+                                  font-family: Courier;
+                                  background-color: green;
+                                background-size: 60px;
+                        }
+                     h2 span{color:greenyellow;
+                     }
+                      #header{
+        height:10%;
+        background:green;
+        width:100%
+     }
+     
+		
+</style>
+    </head>
+    <body>
+      <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+     <div id="header">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>       
+        </button>
+           <img src="../image/logo.jpg" height="100px" width="110px" margin-right="500px">   
+        
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="../logoutServlet">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+   </div>
+  </nav>
+      
+        
+        <form action="../ticketservlet"  method="post" class=form>
+	<div><center><h2> Ticket</h2></center></div>
+        <hr>
+         <h4><center>Source : &nbsp; &nbsp;<input type="text" name="source" placeholder="Enter your souce Location..." required></center></h4>
+         <h4><center>Destination: <input type="text" name="destination" placeholder="Enter your Destination Location..." required></center></h4>
+	<h4><center>Train No. : <input type="number" name="name" placeholder=" Please Enter Train Number........"id="a1" width="400" required><br><br></center></h4>
+        <h4><center>Travelling Class  :   &nbsp;&nbsp;&nbsp;&nbsp;<select name="class" style="width:150px" height="50px"required>  
+            <option>SL</option>  
+            <option>3A</option>  
+            <option>2A</option>  
+            <option>1A</option>  
+            <option>CC</option>
+            <option>EC</option>
+            <option>2S</option>
+            <option>3E</option>
+            <option>FC</option>
+            <option>GN</option>
+            </select>		
+	</center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h4><center>Date Of Journey :<input type="date" placeholder="Enter Journey Date...." name="date" required> </center></h4>    
+       <h4> <center><input type="submit" value="SIGN IN"></center></h4>
+        
+</form>
+    </body>
+</html>
